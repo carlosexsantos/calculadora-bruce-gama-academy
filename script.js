@@ -5,6 +5,9 @@ function adicionarNumero(num){
     if (valor.length == 10){
         return;
     }
+    if (num == "." && valor.includes('.')) {
+        return;
+    }
     if( valor === "0" ){
         if( num == '.' ){
             document.getElementById("current-operacoes").innerHTML = '0.';
